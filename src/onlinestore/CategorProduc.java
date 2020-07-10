@@ -10,7 +10,7 @@ public class CategorProduc {
         Product product4 = new Product("pepper", 17, 2);
 
         Product[] product = {product1, product2, product3, product4};
-        Category category = new Category("Food", product);
+       Category category = new Category("Food", product);
         Basket basket = new Basket(product);
     }
     void compareNamber(){

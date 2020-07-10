@@ -1,37 +1,55 @@
 package onlinestore;
 
 public class Product {
-    private String nameOfProduct;
-    private int priceOfProduct;
-    private int ratingOfProduct;
+    private int id;
+    private String name;
+    private int price;
+    private int rate;
 
-    public Product(String nameOfProduct, int priceOfProduct, int ratingOfProduct) {
-        this.nameOfProduct = nameOfProduct;
-        this.priceOfProduct = priceOfProduct;
-        this.ratingOfProduct = ratingOfProduct;
+    public Product(int id, String name, int price, int rate) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.rate = rate;
+    }
+
+    public Product(String name, int price, int rate) {
+             this.name = name;
+        this.price = price;
+        this.rate = rate;
     }
 
     public String getNameOfProduct() {
-        return nameOfProduct;
+        return name;
     }
 
     public void setNameOfProduct(String nameOfProduct) {
-        this.nameOfProduct = nameOfProduct;
+        this.name = nameOfProduct;
     }
 
     public int getPriceOfProduct() {
-        return priceOfProduct;
+        return price;
     }
 
     public void setPriceOfProduct(int priceOfProduct) {
-        this.priceOfProduct = priceOfProduct;
+        this.price = price;
     }
 
     public int getRatingOfProduct() {
-        return ratingOfProduct;
+        return rate;
     }
 
     public void setRatingOfProduct(int ratingOfProduct) {
-        this.ratingOfProduct = ratingOfProduct;
+        this.rate = ratingOfProduct;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", nameOfProduct='" + name + '\'' +
+                ", priceOfProduct=" + price +
+                ", ratingOfProduct=" + rate +
+                '}';
     }
 }
